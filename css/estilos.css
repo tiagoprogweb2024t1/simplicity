@@ -42,6 +42,7 @@ h1 a {
 }
 
 header {
+    height: 12vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,7 +117,7 @@ seguintes configurações:
 em cima do outro (ou seja, use o modo coluna) */
 
 .destaque {
-    height: 500px;
+    height: 88vh;
     background-image: 
         url(../imagens/fundo-destaque.jpg);
     background-attachment: fixed;
@@ -141,4 +142,22 @@ para o h2 e para o p contidos em destaque */
 .destaque h2, .destaque p {
     color: var(--cor-clara);
     text-align: center;
+}
+
+/* Sobre a função clamp()
+Função útil para redimensionamento
+responsivo de acordo com certos critérios.
+
+clamp( 
+  tamanhoMínimo,
+  tamanhoIdeal/Variável/Responsivo,
+  tamanhoMáximo
+); */
+
+.destaque h2 { 
+    font-size: clamp(3rem, 10vw, 7rem);
+}
+
+.destaque p {
+    font-size: clamp(1.5rem, 3vw, 3rem);
 }
