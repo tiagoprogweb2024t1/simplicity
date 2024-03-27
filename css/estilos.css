@@ -142,6 +142,13 @@ para o h2 e para o p contidos em destaque */
 .destaque h2, .destaque p {
     color: var(--cor-clara);
     text-align: center;
+
+    /* Etapa 2: aplicar a animação */
+    animation-name: animaDestaque;
+    animation-duration: 1s;
+
+    /* Aceleração/desaceleração */
+    animation-timing-function: ease-out;
 }
 
 /* Sobre a função clamp()
@@ -160,4 +167,16 @@ clamp(
 
 .destaque p {
     font-size: clamp(1.5rem, 3vw, 3rem);
+}
+
+/* Etapa 1) Regra de animação */
+@keyframes animaDestaque {
+    /* Dê (estado inicial, como começa) */
+    from {
+        opacity: 0;
+        transform: translateY(-600px);
+    }
+
+    /* Para (estado final, como termina) */
+    to { opacity: 1; }
 }
