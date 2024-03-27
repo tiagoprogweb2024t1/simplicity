@@ -113,6 +113,32 @@ seguintes configurações:
 -Imagem de fundo (fundo-destaque)
 -Imagem de fundo deve ficar parada
 -Flex com alinhamento totalmente centralizado, e um elemento
-em cima do outro (ou seja, use o modo coluna)
+em cima do outro (ou seja, use o modo coluna) */
 
-2) Crie uma regra CSS para formatar o h2 e o p contidos em Destaque. Faça com que os textos fiquem centralizados (text-align) e com cor clara. */
+.destaque {
+    height: 500px;
+    background-image: 
+        url(../imagens/fundo-destaque.jpg);
+    background-attachment: fixed;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* Versão 1: aplicando
+    cor e alinhamento do texto
+    DIRETAMENTE em destaque */
+    /* color: var(--cor-clara);
+    text-align: center; */
+}
+
+
+/* 2) Crie uma regra CSS para formatar o h2 e o p contidos em Destaque. Faça com que os textos fiquem centralizados (text-align) e com cor clara. */
+
+/* Versão 2: regras específicas
+para o h2 e para o p contidos em destaque */
+.destaque h2, .destaque p {
+    color: var(--cor-clara);
+    text-align: center;
+}
