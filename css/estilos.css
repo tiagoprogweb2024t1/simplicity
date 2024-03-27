@@ -104,3 +104,15 @@ quando o menu for acionado para abertura */
 
     background-color: var(--cor-clara);
 }
+
+/* Exercícios
+1) Crie uma regra CSS para formatar o destaque com as
+seguintes configurações:
+
+-Altura 500px
+-Imagem de fundo (fundo-destaque)
+-Imagem de fundo deve ficar parada
+-Flex com alinhamento totalmente centralizado, e um elemento
+em cima do outro (ou seja, use o modo coluna)
+
+2) Crie uma regra CSS para formatar o h2 e o p contidos em Destaque. Faça com que os textos fiquem centralizados (text-align) e com cor clara. */
