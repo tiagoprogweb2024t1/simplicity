@@ -306,9 +306,24 @@ th {
 td { padding: 0.5rem; }
 
 tr:nth-child(odd){
-    background-color: yellow;
+    background-color: var(--cor-clara);
 }
 
 tr:nth-child(even){
-    background-color: salmon;
+    background-color: var(--cor-intermediaria);
 }
+
+td:nth-child(2){
+    text-align: center;
+}
+
+th:last-child, td:last-child {
+    text-align: right;
+}
+
+/* Inserindo um conteúdo textual
+antes (before) de cada valor (td:last-child) */
+td:last-child::before {
+    content: "R$ ";
+}
+
