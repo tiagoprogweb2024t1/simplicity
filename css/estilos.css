@@ -54,6 +54,7 @@ header {
     position: sticky;
     top: 0;
     background-color: var(--cor-clara);
+    z-index: 100;
 }
 
 nav h2 a { 
@@ -333,6 +334,23 @@ th:last-child, td:last-child {
 antes (before) de cada valor (td:last-child) */
 td:last-child::before {
     content: "R$ ";
+}
+
+
+/* Regras para a página Serviços */
+.galeria { text-align: center; }
+
+.galeria img {
+    border-radius: 50%;
+    transform: scale(0.8);
+    filter: brightness(150%) blur(1px);
+    transition: 0.5s;
+}
+
+.galeria img:hover {
+    transform: scale(1);
+    filter: none;
+    border-radius: 10%;
 }
 
 
