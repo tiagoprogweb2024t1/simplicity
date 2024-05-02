@@ -364,7 +364,16 @@ input, select, textarea {
     padding: 4px;
     height: 40px;
     border-radius: 4px;
+    background-color: var(--cor-clara);
 }
+
+/* Se quiser mudar o outline (tipo de borda 
+que aparece quando o campo ganha foco) */
+/* input:focus, select:focus, textarea:focus {
+     outline-width: 5px;
+    outline-color: purple;
+    outline-style: dashed; 
+} */
 
 textarea { height: auto; }
 
@@ -404,6 +413,14 @@ button:hover, button:focus {
     box-shadow: var(--cor-escura) 0 0 2px;
 }
 
+#cep { width: 60%; }
+
+#buscar { 
+    width: 39%;
+    padding: 12px;
+}
+
+.campos-restantes { display: none; }
 
 @media screen and (min-width: 570px) {
     nav h2 { display: none; }
