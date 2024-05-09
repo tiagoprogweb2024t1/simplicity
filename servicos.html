@@ -33,16 +33,16 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quo esse laborum molestias facilis assumenda libero rerum! Debitis facere assumenda in reiciendis quae, aut temporibus porro? Inventore vero quis voluptatem?</p>
 
             <figure class="galeria">
-                <a data-lightbox="fotos" href="imagens/consultoria-treinamento.jpg">
+                <a data-title="Somos especialistas em treinamento" data-lightbox="fotos" href="imagens/consultoria-treinamento.jpg">
                     <img src="imagens/consultoria-treinamento-mini.jpg" alt="">
                 </a>
-                <a data-lightbox="fotos" href="imagens/desenvolvimento-web.jpg">
+                <a data-title="Nosso time sabe tudo!" data-lightbox="fotos" href="imagens/desenvolvimento-web.jpg">
                     <img src="imagens/desenvolvimento-web-mini.jpg" alt="">
                 </a>
-                <a data-lightbox="fotos" href="imagens/design-grafico.jpg">
+                <a data-title="Profissionais criativos" data-lightbox="fotos" href="imagens/design-grafico.jpg">
                     <img src="imagens/design-grafico-mini.jpg" alt="">
                 </a>
-                <a data-lightbox="fotos" href="imagens/marketing-digital.jpg">
+                <a data-title="Seu produto ou empresa será conhecido" data-lightbox="fotos" href="imagens/marketing-digital.jpg">
                     <img src="imagens/marketing-digital-mini.jpg" alt="">
                 </a>
             </figure>
@@ -66,6 +66,14 @@
 
     <!-- Importação do JS do Plugin Lightbox -->
     <script src="lightbox/js/lightbox.min.js"></script>
+
+    <script>
+        lightbox.option({
+            resizeDuration: 600,
+            wrapAround: true,
+            albumLabel: "Foto %1 de %2"
+        })
+    </script>
 
     <script src="js/menu.js"></script>
 </body>
