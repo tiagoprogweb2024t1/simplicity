@@ -422,6 +422,12 @@ button:hover, button:focus {
 
 .campos-restantes { display: none; }
 
+#status-do-envio {
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+}
+
 @media screen and (min-width: 570px) {
     nav h2 { display: none; }
     .links-menu { display: flex; }

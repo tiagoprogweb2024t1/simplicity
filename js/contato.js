@@ -96,19 +96,22 @@ botaoBuscar.addEventListener("click", async function(event){
         }
       }).then(response => {
         if (response.ok) {
-          status.innerHTML = "Thanks for your submission!";
+          status.innerHTML = "Obrigado. Em breve retornaremos. 😉";
+          status.style.color = "blue";
           formulario.reset()
         } else {
           response.json().then(data => {
             if (Object.hasOwn(data, 'errors')) {
               status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
             } else {
-              status.innerHTML = "Oops! There was a problem submitting your form"
+              status.innerHTML = "Oops! Deu ruim nos dados! 🙄"
+              status.style.color = "red";
             }
           })
         }
       }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
+        status.innerHTML = "Oops! Algo de errado não está certo... 😑"
+        status.style.color = "red";
       });
     }
     formulario.addEventListener("submit", handleSubmit)
